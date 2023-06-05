@@ -1,0 +1,198 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+}
+body{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    column-gap: 0px;
+    row-gap: 0px;
+    background-color: black;
+    width: 100%;
+}
+.header{
+    overflow: hidden;
+    background-color: #1f2937;
+    padding: 15px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+.header a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    border-radius: 10px;
+
+}
+header a:nth-child(2){
+    margin-right: 300px;
+}
+#logo{
+    font-size: 24px;
+    color: white;
+    float: left;
+    margin-left: 100px;
+}   
+header a:hover{
+    transform: scale(1.1);
+    outline: 2px solid #3882F6;
+    box-shadow: 4px 5px 17px -4px #3882F6;
+    
+}
+.main.content{
+    height: 420px;
+    background-color: #1f2937;
+    color: white;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main.content div{
+    height: 50%;
+    width: 35%;
+    padding: 3px;
+}
+.main.content div button{
+   padding: 10px;
+   color: black;
+   width: 150px;
+  align-self: flex-end;
+  border-radius: 10px;
+  font-size: 18px;
+  
+}
+button:hover {
+    color: white;
+    transform: scale(1.1);
+    outline: 2px solid #3882F6;
+    box-shadow: 4px 5px 17px -4px #3882F6;
+}
+ 
+.main.content div p{
+    font-size: 18px;
+}
+.main.content div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.cards.container{
+    height:400px ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+.cards.container h1{
+    position: absolute;
+    align-self: flex-start;
+}
+.card{
+    height: 230px;
+    width: 180px;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow .3s ease, transform .2s ease;
+}
+.box:hover {
+    box-shadow: 0 8px 50px #23232333;
+   }
+.box{
+    width: 100%;
+    height: 80%;
+    border: 3px solid #3882F6 ;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.card span{
+    padding: 10px;
+    font-style: italic;
+}
+
+.quotes{
+    background-color: #E5E7EB;
+    height: 350px;
+    padding: 10px;
+    color:#1F2937;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+.quotes div{
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+}
+.details{
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.details div{
+    height: 150px;
+    background-color:#3882F6;
+    width: 800px; 
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    padding:10px;
+    display: flex;
+    
+    
+}
+.details div span{
+    width: 80%;
+    padding: 20px;
+}
+.details div button{
+    padding: 3px;
+    color: black;
+    width: 140px;
+   border-radius: 10px;
+   font-size: 15px;
+   margin: 5px;
+   height: 35px;
+   align-self: center;
+   
+   
+   
+}
+.details div button:hover {
+    color: black;
+    transform: scale(1.1);
+    outline: 2px solid #1f2937;
+    box-shadow: 4px 5px 17px -4px #1f2937;
+}
+footer{
+    background-color: #1F2937;
+    text-align: center;
+    color: white;
+    height: 150px;
+    
+}
